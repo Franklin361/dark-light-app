@@ -1,0 +1,19 @@
+:root {
+    --background: #f2f2f2;
+    --text-primary: #0f0f0f;
+    --text-secondary: #4e4e4e;
+    --accent: #dfb017;
+    --accent-hover: #cea315; 
+    --border: #1f1e1e;
+    --shadow: 7px 15px 13px -4px #00000056;
+}
+
+[data-theme='dark'] {
+    --background: #05010a;
+    --text-primary: #f2f2f2;
+    --text-secondary: #a7a4a4;
+    --accent: #6a5acd;
+    --accent-hover: #5b4cbe; 
+    --border: #696969;
+    --shadow: 7px 15px 13px -4px #ffffff1b;
+}

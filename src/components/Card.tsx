@@ -1,6 +1,7 @@
 
 
 export const Card = () => {
+    console.log('card')
     return (
         <div className="card">
             <div className="card-image"></div>

@@ -1,20 +1,17 @@
 
-import { useState } from "react"
 import { LayoutCards } from "./components/Card";
 import { Switch } from "./components/Switch";
 import { Title } from "./components/Title";
+import { useTheme } from "./hook/useTheme";
 
 const App = () => {
-  const [dark, setDark] = useState(true)
-
-  const habdleChange = (e:React.ChangeEvent<HTMLInputElement>) => setDark(e.target.checked);
-  console.log({dark})
+  const [theme, handleChange] = useTheme('dark');
 
   return (
     <div className="container-main">
-      <Title/>
-      <Switch isDark={dark} onChange={habdleChange} />
-      <LayoutCards/>
+      <Title />
+      <Switch isDark={theme === 'dark'} onChange={handleChange} />
+      <LayoutCards />
     </div>
   )
 }

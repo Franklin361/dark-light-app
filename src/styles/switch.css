@@ -1,4 +1,4 @@
-.container-switch{
+.container-switch {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,7 @@
     background-color: #ccc;
     transition: .4s;
     border-radius: 30px;
+    outline: 1px solid var(--border);
 }
 
 .slider:before {
@@ -42,17 +43,14 @@
     border-radius: 20px;
     left: 0.3em;
     bottom: 0.3em;
-    background-color: white;
+    background-color: var(--text-primary);
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: slateblue;
+    background-color: var(--accent);
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px slateblue;
-}
 
 input:checked+.slider:before {
     transform: translateX(1.5em);

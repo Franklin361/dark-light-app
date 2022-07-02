@@ -1,0 +1,25 @@
+/* TITLE PAGE */
+.container-word{
+  display: inline-block;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+
+.letter-special {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 50px;
+}
+
+.lottifile {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
