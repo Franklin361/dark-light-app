@@ -1,8 +1,9 @@
+import { useTheme } from "./hook/useTheme";
 
 import { LayoutCards } from "./components/Card";
+import { MyProfile } from "./components/Perfil";
 import { Switch } from "./components/Switch";
 import { Title } from "./components/Title";
-import { useTheme } from "./hook/useTheme";
 
 const App = () => {
   const [theme, handleChange] = useTheme('dark');
@@ -12,6 +13,7 @@ const App = () => {
       <Title />
       <Switch isDark={theme === 'dark'} onChange={handleChange} />
       <LayoutCards />
+      <MyProfile/>
     </div>
   )
 }

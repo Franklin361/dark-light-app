@@ -1,0 +1,87 @@
+.profile {
+    background-color: rgb(0, 0, 0);
+
+    z-index: 9;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    outline: 2px solid rgb(53, 53, 53);
+    padding: 5px;
+    border-radius: 35px;
+}
+
+.fixed-profile {
+    position: fixed;
+    top: 2.5rem;
+    left: 1rem;
+}
+
+
+.profile>p {
+    padding: 0 1em 0 0;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.profile>p>span {
+    font-size: .8em;
+    color: rgb(209, 206, 206);
+}
+
+.profile>img {
+    transform-origin: center bottom;
+    animation: bounce 1s linear;
+    animation-delay: 5s;
+}
+
+.profile:hover>img {
+    transform-origin: center bottom;
+    animation: bounce 1s linear infinite;
+    animation-delay: 0s;
+}
+
+
+@keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -30px, 0) scaleY(1.1);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -15px, 0) scaleY(1.05);
+    }
+
+    80% {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+}
+
+
+@media screen and (max-width:1110px) {
+    .fixed-profile {
+        top: .5em;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}

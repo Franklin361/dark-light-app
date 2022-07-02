@@ -1,11 +1,19 @@
 /* TITLE PAGE */
-.container-word{
+.container-word {
   display: inline-block;
 }
+
 h1 {
   font-size: 4rem;
   font-weight: 900;
   margin-top: 2rem;
+}
+
+
+@media screen and (max-width:1110px) {
+  h1{
+    padding-top: 3rem;
+  }
 }
 
 .letter-special {
