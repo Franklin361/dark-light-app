@@ -1,5 +1,5 @@
 .profile {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--background);
 
     z-index: 9;
     text-decoration: none;
@@ -26,11 +26,12 @@
     display: flex;
     gap: 5px;
     flex-direction: column;
+    color: var(--text-primary);
 }
 
 .profile>p>span {
     font-size: .8em;
-    color: rgb(209, 206, 206);
+    color: var(--text-secondary);
 }
 
 .profile>img {
