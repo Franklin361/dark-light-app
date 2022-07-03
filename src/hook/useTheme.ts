@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react';
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>
 
-export const useTheme = (initialTheme: 'dark' | 'light'): [string, (e: ChangeEvent) => void] => {
+type Theme = 'dark' | 'light'
 
-    const [theme, setTheme] = useState(initialTheme)
+type useThemeReturn = [ string, (e: ChangeEvent) => void ];
 
-    const handleChange = (e: ChangeEvent) => {
-        setTheme(e.target.checked ? 'dark' : 'light')
-    }
+export const useTheme = (initialTheme:Theme): useThemeReturn => {
+
+    const [theme, setTheme] = useState<Theme>(initialTheme)
+
+    const handleChange = (e: ChangeEvent) => setTheme(e.target.checked ? 'dark' : 'light')
 
     useEffect(() => {
         document.body.setAttribute('data-theme', theme);

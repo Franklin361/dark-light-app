@@ -1,11 +1,14 @@
-export const Switch = (
-    { isDark, onChange }:{ isDark: boolean, onChange: (e: React.ChangeEvent<HTMLInputElement>) => void}
-    ) => {
+import { useTheme } from "../hook/useTheme";
+
+export const Switch = () => {
+    
+    const [theme, handleChange] = useTheme('dark');
+
     return (
         <div className="container-switch">
             <span>Change Theme </span>
             <label className="switch">
-                <input type="checkbox" onChange={onChange} checked={isDark} />
+                <input type="checkbox" onChange={handleChange} checked={theme === 'dark'} />
                 <span className="slider"></span>
             </label>
         </div>
