@@ -1,17 +1,17 @@
-# **Title Project 🍅**
-**Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.**
+# **Dark Theme React JS 🌘**
+**This time, we are going to implement the dark mode with React and without any other external library!.**
 
 &nbsp;
 
-![Image or Gif](https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png)
+![Image or Gif](https://res.cloudinary.com/dnxchppfm/image/upload/v1656779026/posts/dar-light/dark-light_trvshy.gif)
 
 &nbsp;
 
 ## **Features ⚙️**
 
-1. 
-2. 
-3. 
+1. Tema Light 
+2. Dark Theme
+3. Switch between themes
 
 &nbsp;
 
@@ -20,6 +20,7 @@
 - React JS
 - TypeScript
 - Vite JS
+- Vanilla CSS 3
 
 &nbsp;
 
@@ -28,7 +29,7 @@
 1. Clone the repository (you need to have [Git](https://git-scm.com) installed).
 
 ```shell
-    git clone [repository link]
+    git clone https://github.com/Franklin361/dark-light-app.git
 ```
 
 2.  Install dependencies of the project.
@@ -53,10 +54,10 @@
 ## **Links ⛓️**
 
 ### Demo of the application 🔥
-- 🔗 https://find-your-place.netlify.app
+- 🔗 https://dark-light-theme-app.netlify.app/
 
 ### Here's the link to the tutorial in case you'd like to take a look at it! eyes 👀
 
-- 🇲🇽 🔗 https://find-your-place.netlify.app
+- 🇲🇽 🔗 
 
-- 🇺🇲 🔗 https://find-your-place.netlify.app
+- 🇺🇲 🔗 
